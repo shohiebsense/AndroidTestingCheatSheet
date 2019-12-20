@@ -118,7 +118,7 @@ uiDevice.findObject(By.res(PACKAGE_NAME,"button_save"))
 ```
 13. Find dialog "yes" button, you can find using withText or withId
 ```java
-public static void pressYes(){
+public void pressYes(){
    onView(withText("yes")).perform(click());
 }
 ```
