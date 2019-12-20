@@ -94,5 +94,17 @@ uiDevice.findObject(By.res(PACKAGE_NAME,"button_save"))
         return resolveInfo!!.activityInfo.packageName
     }
 ```
-
-
+11. Testing onActivityResult (Camera etc.)
+   a. Create Activity
+   b. make the data
+   c. put them up in new intent
+   d. set the result with Ok
+   ```java
+    public void employeeQRCodeTest(){
+        String empcodeSample = "99999"
+        Intent intent = new Intent();
+        intent.putExtra(Intents.Scan.RESULT, empcodeSample);
+        setResult(Activity.RESULT_OK, intent);
+        finish();
+    }
+   ```
