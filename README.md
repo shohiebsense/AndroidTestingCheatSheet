@@ -99,6 +99,8 @@ uiDevice.findObject(By.res(PACKAGE_NAME,"button_save"))
    b. make the data  
    c. put them up in new intent  
    d. set the result with Ok  
+   e. getCurrentActivity()
+   f. perform a method tp access the activity. 
    ```java
     public void employeeQRCodeTest(){
         String empcodeSample = "99999"
@@ -108,3 +110,9 @@ uiDevice.findObject(By.res(PACKAGE_NAME,"button_save"))
         finish();
     }
    ```
+12. Press Back
+```java
+ public static void pressBack() {
+        onView(isRoot()).perform(ViewActions.pressBack());
+  }
+```
