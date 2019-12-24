@@ -122,3 +122,10 @@ public void pressYes(){
    onView(withText("yes")).perform(click());
 }
 ```
+
+14. Check if the textview/edittext is not empty
+```java
+public void assertion(){
+    onView(withId(R.id.edit_text)).check(matches(withText(not(equalToIgnoringCase("")))));
+}
+```
